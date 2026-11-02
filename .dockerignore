@@ -1,0 +1,5 @@
+target/*
+!target/employee-service-0.0.1-SNAPSHOT.jar
+.git
+.idea
+README.md

@@ -1,0 +1,25 @@
+# Maven
+/target/
+*.log
+
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# Eclipse / Spring Tools
+.classpath
+.project
+.settings/
+
+# VS Code
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets and local overrides
+.env
+.env.*
+!.env.example
+application-local.yml
