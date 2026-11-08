@@ -1,8 +1,18 @@
+server:
+  port: ${SERVER_PORT:8081}
 spring:
   application:
-    name: employee-service
-server:
-  port: ${PORT:8080}
+    name: employee-job-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: admin
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: validate
+  flyway:
+    enabled: true
 management:
   endpoints:
     web:
